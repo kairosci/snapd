@@ -94,6 +94,7 @@ func infoFromRemote(d *snapDetails) *snap.Info {
 		Username:    d.Developer,
 		DisplayName: d.DeveloperName,
 		Validation:  d.DeveloperValidation,
+		Verified:    d.DeveloperValidation == "verified",
 	}
 	info.Channel = d.Channel
 	info.Sha3_384 = d.DownloadSha3_384
