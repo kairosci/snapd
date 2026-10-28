@@ -1140,7 +1140,7 @@ func CheckInstalledSnapsPublisherValidation(st *state.State) {
 			}
 		}
 
-		if !checkPublisherValidation(tr, publisher) {
+		if !checkPublisherValidation(validationsStr, publisher) {
 			st.Warnf("snap %q publisher validation dropped below required security policy (required-publisher-validations=%s)", instanceName, validationsStr)
 		}
 	}
